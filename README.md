@@ -37,9 +37,15 @@ The analysis of the election show that:
 ## Election Audit Summary
 This script can be used as a basis for further elections within Colorado as is but we could also expand it to provide some further information to the commission. 
 
-# 1. Which candidate got most votes in which county:
--  To do this we would need to create another dictionary to track candidate votes per county. Then within the for loop to read data, we could use an if statement to check if the candidate and county exist in the candidate_county_votes dictionary, if not add it and begin to track votes and increase the vote count by 1. Once the for loop has completed,this would then be printed to the screen using the dictionary calculated results for each county and candidate.
+### 1. Which candidate got most votes in which county:
+-  To do this we would need to create another dictionary to track candidate votes per county. Then within the for loop to read data, we could use an if statement to check if the candidate and county exist in the candidate_county_votes dictionary, 
+```
+#for example
+if candidate_name not in candidate_county_votes AND county_name not in candidate_county_votes:
+
+```
+if not add it and begin to track votes and increase the vote count by 1. Once the for loop has completed,this would then be printed to the screen using the dictionary calculated results for each county and candidate.
 
 
-# 2. Check there are no duplicate Ballot IDs:
-- To do this we would need to create a list to hold all ballot Ids. All ballots would checked by reading in the data using </ballot_id = row[1]>. Then using an if - else statement, we could check if the ballot id already exists in the list. If it does not, add it. If it is already there - we could print "Duplicate Ballot Id found" and print the problem ID. This would help to ensure each Ballot Id is unique and there is no chance of false results. 
+### 2. Check there are no duplicate Ballot IDs:
+- To do this we would need to create a list to hold all ballot Ids. All ballots would checked by reading in the data using `ballot_id = row[1]`. Then using an if - else statement, we could check if the ballot id already exists in the list. If it does not, add it. If it is already there - we could print "Duplicate Ballot Id found" and print the problem ID. This would help to ensure each Ballot Id is unique and there is no chance of false results. 
