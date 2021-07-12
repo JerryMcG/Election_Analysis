@@ -38,13 +38,7 @@ The analysis of the election show that:
 This script can be used as a basis for further elections within Colorado as is but we could also expand it to provide some further information to the commission. 
 
 ### 1. Which candidate got most votes in which county:
--  To do this we would need to create another dictionary to track candidate votes per county. Then within the for loop to read data, we could use an if statement to check if the candidate and county exist in the candidate_county_votes dictionary, 
-```
-#for example
-if candidate_name not in candidate_county_votes AND county_name not in candidate_county_votes:
-
-```
-if not add it and begin to track votes and increase the vote count by 1. Once the for loop has completed,this would then be printed to the screen using the dictionary calculated results for each county and candidate.
+-  To do this we would need to create another dictionary to track candidate votes per county. Then within the for loop to read data, we could use an if statement to check if the candidate and county exist in the candidate_county_votes dictionary, for example `if candidate_name not in candidate_county_votes AND county_name not in candidate_county_votes:`. If it is not there, add it and begin to track votes and increase the vote count by 1. Once the for loop has completed,this would then be printed to the screen using the dictionary calculated results for each county and candidate.
 
 
 ### 2. Check there are no duplicate Ballot IDs:
